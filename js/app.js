@@ -2793,14 +2793,27 @@
             observeParents: true,
             slidesPerView: 3,
             spaceBetween: 30,
-            autoHeight: true,
             speed: 800,
             loop: true,
             navigation: {
                 prevEl: ".mediaswiper-button-prev",
                 nextEl: ".mediaswiper-button-next"
             },
-            on: {}
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    autoHeight: true
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
         });
         if (document.querySelector(".blog__slider")) new core(".blog__slider", {
             modules: [ Navigation ],
@@ -2815,7 +2828,21 @@
                 prevEl: ".blogswiper-button-prev",
                 nextEl: ".blogswiper-button-next"
             },
-            on: {}
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    autoHeight: true
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
         });
         if (document.querySelector(".education__slider")) new core(".education__slider", {
             modules: [ Navigation ],
@@ -2830,7 +2857,21 @@
                 prevEl: ".educationswiper-button-prev",
                 nextEl: ".educationswiper-button-next"
             },
-            on: {}
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    autoHeight: true
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
         });
     }
     window.addEventListener("load", (function(e) {

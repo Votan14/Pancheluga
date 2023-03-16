@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230308170350">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230316093516">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,7 +96,7 @@
 						<div class="myself__box-texts">
 							<h1 class="myself__title _title">Про себе
 							</h1>
-							<p class="myself__subtitle">Вітаю! Я - Катерина Панчелюга, адвокатка.</p>
+							<p class="myself__subtitle">Вітаю! <br> Я - Катерина Панчелюга, адвокатка.</p>
 							<p class="myself__text"><span>
 									Уже 14 років я допомагаю людям відстоювати їхні права і боротися з
 									труднощами
@@ -222,7 +222,7 @@
 					</div>
 					<p class="education__title">Освіта
 					</p>
-					<p class="education__text">Вища - спеціальність правознавство.
+					<p class="education__text bold">Вища - спеціальність правознавство.
 					</p>
 					<p class="education__text">Факультет Інститут підготовки кадрів для органів прокуратури України.</p>
 					<p class="education__text">Диплом магістра з відзнакою Національної Юридичної академії України імені
@@ -278,18 +278,17 @@
 			</section>
 			<section class="media">
 				<div class="media__container">
-					<h2 class="media__title _title">Публікації у ЗМІ:
-
+					<h2 class="media__title _title">Я в медіа-просторі
 					</h2>
 					<p class="media__subtitle _subtitle">Перегляньте відео моїх консультацій на телеканалі «Рівне 1»</p>
 					<div class="media__slider-box">
 						<!-- Оболонка слайдера -->
-						<div class="media__slider swiper swiper-initialized swiper-horizontal swiper-autoheight swiper-android swiper-backface-hidden">
+						<div class="media__slider swiper" data-showmore="items">
 
 							<!-- Частина слайдера, що рухається -->
-							<div class="media__wrapper swiper-wrapper" style="height: 311px;">
+							<div class="media__wrapper swiper-wrapper" data-showmore-content="3">
 								<!-- Слайд -->
-								<div class="media__slide swiper-slide swiper-slide-active" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="0">
+								<div class="media__slide swiper-slide">
 									<div class="media__slide-img">
 										<img src="img/01.jpg" alt="">
 									</div>
@@ -297,7 +296,7 @@
 										що обрати? </p>
 									<p class="media__slider-text">Ефір від 15.09.2020 р.</p>
 								</div>
-								<div class="media__slide swiper-slide swiper-slide-next" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="1">
+								<div class="media__slide swiper-slide">
 									<div class="media__slide-img">
 										<img src="img/02.jpg" alt="">
 									</div>
@@ -305,7 +304,7 @@
 										що обрати? </p>
 									<p class="media__slider-text">Ефір від 15.09.2020 р.</p>
 								</div>
-								<div class="media__slide swiper-slide" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="2">
+								<div class="media__slide swiper-slide">
 									<div class="media__slide-img">
 										<img src="img/03.jpg" alt="">
 									</div>
@@ -313,7 +312,7 @@
 										клопотів з законом?</p>
 									<p class="media__slider-text">Ефір від 15.09.2020 р.</p>
 								</div>
-								<div class="media__slide swiper-slide" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="3">
+								<div class="media__slide swiper-slide">
 									<div class="media__slide-img">
 										<img src="img/01.jpg" alt="">
 									</div>
@@ -321,7 +320,7 @@
 										що обрати? </p>
 									<p class="media__slider-text">Ефір від 15.09.2020 р.</p>
 								</div>
-								<div class="media__slide swiper-slide" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="4">
+								<div class="media__slide swiper-slide">
 									<div class="media__slide-img">
 										<img src="img/02.jpg" alt="">
 									</div>
@@ -329,7 +328,7 @@
 										що обрати? </p>
 									<p class="media__slider-text">Ефір від 15.09.2020 р.</p>
 								</div>
-								<div class="media__slide swiper-slide" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="5">
+								<div class="media__slide swiper-slide">
 									<div class="media__slide-img">
 										<img src="img/03.jpg" alt="">
 									</div>
@@ -338,6 +337,11 @@
 									<p class="media__slider-text">Ефір від 15.09.2020 р.</p>
 								</div>
 							</div>
+							<button hidden data-showmore-button type="button" class="block__more mobile">
+								<span>Більше відео
+								</span>
+								<span>Приховати</span>
+							</button>
 							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
 							<button type="button" class="mediaswiper-button-prev">
 								<img src="img/icons/left1.svg" alt="">
@@ -407,12 +411,12 @@
 						життя</p>
 					<div class="blog__slider-box">
 						<!-- Оболонка слайдера -->
-						<div class="blog__slider swiper swiper-initialized swiper-horizontal swiper-autoheight swiper-android swiper-backface-hidden">
+						<div class="blog__slider swiper" data-showmore="items">
 
 							<!-- Частина слайдера, що рухається -->
-							<div class="blog__wrapper swiper-wrapper" style="height: 475px;">
+							<div class="blog__wrapper swiper-wrapper" data-showmore-content="3">
 								<!-- Слайд -->
-								<div class="blog__slide swiper-slide swiper-slide-active" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="0">
+								<div class="blog__slide swiper-slide">
 									<div class="blog__slide-img">
 										<img src="img/04.jpg" alt="">
 									</div>
@@ -427,7 +431,7 @@
 										<a href="#!" class="blog__link">Читати більше <img src="img/icons/orange-arrow.svg" alt=""></a>
 									</div>
 								</div>
-								<div class="blog__slide swiper-slide swiper-slide-next" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="1">
+								<div class="blog__slide swiper-slide">
 									<div class="blog__slide-img">
 										<img src="img/05.jpg" alt="">
 									</div>
@@ -441,7 +445,7 @@
 										<a href="#!" class="blog__link">Читати більше <img src="img/icons/orange-arrow.svg" alt=""></a>
 									</div>
 								</div>
-								<div class="blog__slide swiper-slide" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="2">
+								<div class="blog__slide swiper-slide">
 									<div class="blog__slide-img">
 										<img src="img/06.jpg" alt="">
 									</div>
@@ -455,7 +459,7 @@
 										<a href="#!" class="blog__link">Читати більше <img src="img/icons/orange-arrow.svg" alt=""></a>
 									</div>
 								</div>
-								<div class="blog__slide swiper-slide" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="3">
+								<div class="blog__slide swiper-slide">
 									<div class="blog__slide-img">
 										<img src="img/04.jpg" alt="">
 									</div>
@@ -470,7 +474,7 @@
 										<a href="#!" class="blog__link">Читати більше <img src="img/icons/orange-arrow.svg" alt=""></a>
 									</div>
 								</div>
-								<div class="blog__slide swiper-slide" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="4">
+								<div class="blog__slide swiper-slide">
 									<div class="blog__slide-img">
 										<img src="img/05.jpg" alt="">
 									</div>
@@ -484,7 +488,7 @@
 										<a href="#!" class="blog__link">Читати більше <img src="img/icons/orange-arrow.svg" alt=""></a>
 									</div>
 								</div>
-								<div class="blog__slide swiper-slide" style="width: 373.333px; margin-right: 30px;" data-swiper-slide-index="5">
+								<div class="blog__slide swiper-slide">
 									<div class="blog__slide-img">
 										<img src="img/06.jpg" alt="">
 									</div>
@@ -499,6 +503,10 @@
 									</div>
 								</div>
 							</div>
+							<button hidden data-showmore-button type="button" class="block__more mobile">
+								<span>Більше дописів</span>
+								<span>Приховати</span>
+							</button>
 							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
 							<button type="button" class="blogswiper-button-prev">
 								<img src="img/icons/left1.svg" alt="">
@@ -514,7 +522,8 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__item">
-					<a href="/"><img src="img/icons/logo_header.svg" alt=""></a>
+					<a href="/"><img src="img/icons/logo_header.svg" alt="" class="footer__logo-desktop"></a>
+					<a href="/"><img src="img/icons/footer-logo-mob.svg" alt="" class="footer__logo-mobile"></a>
 				</div>
 				<div class="footer__item">
 					<p class="footer__title">Головна</p>
@@ -557,12 +566,13 @@
 					<p class="footer__link"><a href="#!">Угода користувача</a></p>
 					<p class="footer__link"><a href="#!">Політика конфіденційності</a></p>
 					<ul class="footer__list">
-						<li class="footer__list-item">© 2016 - 2022 Персональний сайт Адвоката Панчелюги Катерини
+						<li class="footer__list-item">
+							© 2016 - 2022 Персональний сайт Адвоката Панчелюги Катерини
 							Миколаївни
-
 						</li>
-						<li class="footer__list-item"><a href="#!">advocate.rivne@gmail.com</a></li>
-						<li class="footer__list-item"><a href="#!">+38 097 133 68 51</a></li>
+						<li class="footer__list-item"><a href="mailto:advocate.rivne@gmail.com">advocate.rivne@gmail.com</a>
+						</li>
+						<li class="footer__list-item"><a href="tel:+380971336851">+38 097 133 68 51</a></li>
 					</ul>
 					<ul class="footer__icons">
 						<li><a href="#!"><img src="img/icons/fb1.svg" alt=""></a> </li>
@@ -573,7 +583,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230308170350"></script>
+	<script src="js/app.min.js?_v=20230316093516"></script>
 </body>
 
 </html>
